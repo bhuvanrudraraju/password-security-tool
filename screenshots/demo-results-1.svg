@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1190" viewBox="0 0 1400 1190">
+  <rect width="1400" height="1190" fill="#0d1117"/>
+  <rect x="35" y="30" width="1330" height="1130" rx="18" fill="#161b22" stroke="#30363d"/>
+  <circle cx="75" cy="67" r="10" fill="#ff5f57"/><circle cx="105" cy="67" r="10" fill="#febc2e"/><circle cx="135" cy="67" r="10" fill="#28c840"/>
+  <text x="175" y="74" fill="#8b949e" font-family="Menlo, Monaco, monospace" font-size="22">Terminal — Password Security Tool demonstration</text>
+  <text x="75" y="130" fill="#58a6ff" font-family="Menlo, Monaco, monospace" font-size="25">$ python3 demo.py</text>
+  <text x="75" y="180" fill="#f0f6fc" font-family="Menlo, Monaco, monospace" font-size="23">
+    <tspan x="75" dy="0">Password Security Tool — sample-only demonstration</tspan>
+    <tspan x="75" dy="65" fill="#f0f6fc">Common password</tspan>
+    <tspan x="75" dy="43">Assessment: </tspan><tspan fill="#ff7b72">Very Weak (0/10)</tspan>
+    <tspan x="75" dy="43" fill="#c9d1d9">Why:</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- It has at least 8 characters, but a longer passphrase is safer.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- It uses 1 of 4 character types.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- It matches a commonly used password.</tspan>
+    <tspan x="75" dy="43" fill="#c9d1d9">Recommendations:</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- Use at least 12 characters; 16 or more is even better.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- Add uppercase letters, numbers, symbols.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- Do not use common or previously used passwords.</tspan>
+    <tspan x="75" dy="70" fill="#f0f6fc">Short repeated password</tspan>
+    <tspan x="75" dy="43" fill="#f0f6fc">Assessment: </tspan><tspan fill="#ff7b72">Very Weak (0/10)</tspan>
+    <tspan x="75" dy="43" fill="#c9d1d9">Why:</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- It is shorter than 8 characters.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- It uses 2 of 4 character types.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- It contains a run of repeated characters.</tspan>
+    <tspan x="75" dy="43" fill="#c9d1d9">Recommendations:</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- Use at least 12 characters; 16 or more is even better.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- Add uppercase letters, symbols.</tspan>
+    <tspan x="75" dy="35" fill="#c9d1d9">- Avoid repeated runs such as 'aaa' or '111'.</tspan>
+  </text>
+</svg>
