@@ -1,8 +1,14 @@
 """Interactive entry point for the Password Security Tool."""
 
 import sys
-import termios
-import tty
+
+try:
+    import msvcrt  # Windows keyboard input
+    WINDOWS = True
+except ImportError:
+    import termios  # macOS/Linux terminal settings
+    import tty
+    WINDOWS = False
 
 from password_analyzer import analyze_password
 
@@ -30,6 +36,24 @@ def read_masked_password(prompt: str = "Enter a sample password: ") -> str:
 
     print(prompt, end="", flush=True)
     password_characters: list[str] = []
+
+    if WINDOWS:
+        while True:
+            character = msvcrt.getwch()
+            if character in ("\r", "\n"):
+                print()
+                break
+            if character == "\x03":  # Ctrl+C
+                raise KeyboardInterrupt
+            if character in ("\x08",):  # Backspace
+                if password_characters:
+                    password_characters.pop()
+                    print("\b \b", end="", flush=True)
+                continue
+            password_characters.append(character)
+            print("*", end="", flush=True)
+        return "".join(password_characters)
+
     file_descriptor = sys.stdin.fileno()
     original_settings = termios.tcgetattr(file_descriptor)
     try:

@@ -55,6 +55,13 @@ Run the prepared demonstration:
 python3 demo.py
 ```
 
+On Windows, run the same commands with `py` instead:
+
+```bat
+py demo.py
+py app.py
+```
+
 ## 8. How the Analysis Works
 
 The score starts at zero. Longer passwords (with an extra point for 20+ characters) and each of four character types (uppercase, lowercase, number, symbol) add points. Common passwords, repeated-character runs, and keyboard/number sequences subtract points. The score is limited to 0–10 and mapped to a clear rating.
