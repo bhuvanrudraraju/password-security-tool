@@ -10,7 +10,7 @@ Help users understand why a password is weak or strong and how to make safer cho
 
 ## 3. Features
 
-- Accepts one password for local analysis with hidden terminal input.
+- Accepts one password for local analysis with masked terminal input (`*` per character).
 - Assesses length, character diversity, common passwords, repeated characters, and predictable sequences.
 - Returns a five-level rating: Very Weak, Weak, Moderate, Strong, or Very Strong.
 - Explains the rating and gives specific recommendations.
@@ -77,7 +77,7 @@ python3 -m unittest -v
 
 ## 10. Privacy and Security
 
-The tool processes one entered password only in program memory. It does not write the password to a file, database, log, or network service, and it never prints the entered value. `getpass` hides terminal typing. For this assignment, use sample passwords only—never real passwords.
+The tool processes one entered password only in program memory. It does not write the password to a file, database, log, or network service, and it never prints the entered value. It displays a `*` for each character while you type; this reveals length but not the characters. For this assignment, use sample passwords only—never real passwords.
 
 ## 11. Demo and Screenshots
 
